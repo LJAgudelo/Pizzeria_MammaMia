@@ -4,6 +4,8 @@ import MyNavbar from './components/MyNabvar';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Register from './components/Register';
+import Login from './components/Login';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,9 +13,10 @@ function App() {
   return (
     <>
       <MyNavbar/>
-      <Home/>
-      
-      <Footer/>
+{/*       <Home/> 
+    <Register/>*/}
+    <Login/>
+    <Footer/>
     </>
   )
 }

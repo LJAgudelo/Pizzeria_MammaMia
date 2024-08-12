@@ -95,3 +95,11 @@ button:focus-visible {
   margin: 10px;
   padding: 10px;
 }
+
+.formulario {
+  max-width: 100%; /* Ajusta este valor según tus necesidades */
+  margin: 30px auto; /* Centra el formulario horizontalmente */
+  padding: 30px; /* Agrega espacio interno */
+  background-color: #dae2ed; /* Opcional: color de fondo */
+  border-radius: 8px; /* Opcional: bordes redondeados */
+}
