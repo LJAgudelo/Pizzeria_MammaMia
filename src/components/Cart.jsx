@@ -62,7 +62,7 @@ const Cart = () => {
         
         )}
         <Button variant="secondary" onClick={() => alert('Funcionalidad de pago por implementar')}>Total a pagar</Button>
-        <h3>Total: ${calcularTotal()}</h3>
+        <h3>${calcularTotal()}</h3>
         </>
 
             
