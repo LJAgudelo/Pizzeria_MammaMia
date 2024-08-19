@@ -17,6 +17,7 @@ const CardPizza = ({ name, price, ingredients, img }) => {
                 <Card.Body className="d-flex gap-5 justify-content-center">
                 <Button variant="outline-secondary ">Ver Más <PiEyesFill /></Button>
                 <Button variant="secondary">Añadir <FaCartArrowDown /></Button>
+                
                 </Card.Body>
             </Card.Body>
         </Card>

@@ -15,6 +15,7 @@ const Home = () => {
                         ingredients={pizza.ingredients.join(', ')}
                         price={pizza.price}
                         img={pizza.img}
+                        
                     />
                 ))}
             </div>

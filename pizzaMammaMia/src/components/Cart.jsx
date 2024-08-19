@@ -49,9 +49,7 @@ const Cart = () => {
                 <h5>Cantidad de pizzas: ${pizza.quantity} </h5>
             </Card.Body>
         </Card>
-
             </div>
-           
         )
         
         )}
