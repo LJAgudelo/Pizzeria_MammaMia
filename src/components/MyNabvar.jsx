@@ -2,9 +2,10 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
-import { FcLike, FcUnlock, FcLock, FcKey } from "react-icons/fc";
+import { FcUnlock, FcLock, FcKey } from "react-icons/fc";
 import { FaCartArrowDown } from "react-icons/fa6";
 import {formatCurrency} from '../utils/format'
+import { Link } from 'react-router-dom';
 
 
 
@@ -19,18 +20,20 @@ const MyNabvar = () => {
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Form className="d-flex m-3 mx-4 p-1">
-                            <Button variant="outline-light" className="mx-2"><FcLike /> Home</Button>
+                            <Link to="home" className="text-white ms-3 text-decoration-none"> Home </Link>
+                            <Link to="cart" className="text-white ms-3 text-decoration-none"> Cart </Link>
                            { token ? (
                            
                             <>
-                            <Button variant="outline-light" className="mx-2"><FcUnlock /> Profile</Button>
+                            <Link to="Profile"variant="outline-light" className="mx-2"><FcUnlock />Profile</Link>
                             <Button variant="outline-light" className="mx-2"><FcLock /> Logout</Button>
                             </>
                         ):(
                             
                             <>
-                            <Button variant="outline-light" className="mx-2"><FcKey /><FcLock /> Login</Button>
-                            <Button variant="outline-light" className="mx-2"><FcKey /><FcLock /> Register</Button>
+                            <Link to="login" className="text-white ms-3 text-decoration-none"> Login</Link>
+                            <Link to="registro" className="text-white ms-3 text-decoration-none">Register</Link>
+                            <Link to="profile" className="text-white ms-3 text-decoration-none">Profile</Link>
                             </>
                             )}
                            

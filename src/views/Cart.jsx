@@ -1,25 +1,20 @@
 import React, { useState } from 'react';
-import pizzas from '../pizzas';
+import pizzas from '../components/pizzas';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import { PiEyesFill } from "react-icons/pi";
 import { FaCartArrowDown } from "react-icons/fa6";
 
 
 
 const Cart = () => {
     const [cart, setCart] = useState(pizzas);
-
-
     //Funcion para aumentar
     const aumentarCantidad = (id) => {
         setCart(cart.map(pizza => 
             pizza.id === id ? { ...pizza, quantity: pizza.quantity + 1 } : pizza
         ));
     };
-
-
     //funcion para disminuir
     const disminuirCantidad = (id) => {
         setCart(cart.map(pizza => 
@@ -54,11 +49,8 @@ const Cart = () => {
                 <h5>Cantidad de pizzas: ${pizza.quantity} </h5>
             </Card.Body>
         </Card>
-
             </div>
-           
         )
-        
         
         )}
         <Button variant="secondary" onClick={() => alert('Funcionalidad de pago por implementar')}>Total a pagar</Button>

@@ -1,7 +1,8 @@
 import React from 'react';
-import CardPizza from './CardPizza';
-import Header from './Header';
-import pizzas from '../pizzas';
+import CardPizza from '../components/CardPizza';
+import Header from '../components/Header';
+import pizzas from '../components/pizzas';
+
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
                         ingredients={pizza.ingredients.join(', ')}
                         price={pizza.price}
                         img={pizza.img}
+                        
                     />
                 ))}
             </div>

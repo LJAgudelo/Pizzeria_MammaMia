@@ -103,3 +103,15 @@ button:focus-visible {
   background-color: #dae2ed; /* Opcional: color de fondo */
   border-radius: 8px; /* Opcional: bordes redondeados */
 }
+
+.infoPerfil{
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil {
+  border-radius: 50%; /* Esto hará que la imagen tenga forma circular */
+  width: 100px;       /* Un ancho de 100px */
+  height: 100px;      /* Un alto de 100px, haciendo la imagen cuadrada */
+  object-fit: cover;  /* Esto asegurará que la imagen cubra todo el espacio sin deformarse */
+}

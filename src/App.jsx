@@ -1,24 +1,44 @@
-import { useState } from 'react'
 import './App.css'
-import MyNavbar from './components/MyNabvar';
-import Home from './components/Home';
+import Home from './views/Home';
+import MyNabvar from './components/MyNabvar.jsx';
 import Footer from './components/Footer';
+import Register from './views/Register.jsx'
+import Login from './views/Login.jsx'
+import Cart from './views/Cart.jsx'
+import Profile from './views/Profile.jsx';
+import NotFound from './views/NotFound.jsx'
+import { Routes, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Register from './components/Register';
-import Login from './components/Login';
-import Cart from './components/Cart';
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <MyNavbar/>
-    {/*  <Home/> 
-     <Register/>
-    <Login/>*/}
-    <Cart/>
+
+    <MyNabvar/>
+
+    <Routes>
+      <Route path="home" element= {<Home/>}/>
+      <Route path="cart" element= {<Cart/>}/>
+      <Route path="registro" element={<Register/>}/>
+      <Route path="login" element={<Login/>}/>
+      <Route path="profile" element={<Profile/>}/>
+      <Route path="*" element={<NotFound/>} /> 
+     
+
+
+    </Routes>
+
+
+
+
+
     <Footer/>
+
+
     </>
   )
 }
