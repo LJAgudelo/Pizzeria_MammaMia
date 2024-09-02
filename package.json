@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "pizzamammamia",
   "private": true,
   "version": "0.0.0",
@@ -28,4 +29,29 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "vite": "^5.3.4"
   }
+=======
+  "name": "pizzeria-mamma-mia",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.10.4",
+    "react-dom": "^17.0.2",
+    "react-icons": "^5.2.1",
+    "react-scripts": "4.0.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://github.com/LJAgudelo/Pizzeria_MammaMia.git"
+>>>>>>> 5fe22aef68978aa5bfb75b63c72079813ce56ad9
 }
